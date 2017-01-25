@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h2>A Simple Form</h2>
+	<p><em>Form Fundamentals</em></p>
+	<fieldset>
+		<legend>Customer Info</legend>
+		<label for = "customerName">Name:</label>
+		<input type = "text" name="customerName" placeholder="Enter your name" required autofocus>
+		<br/><br/>
+		<label for = "customerTlf">Telephone:</label>
+		<input type = "text" name="customerTlf" placeholder="Pattern 1-234-567-8910" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+		<br/><br/>
+		<label for = "customerEmail">Email address:</label>
+		<input type = "text" name="customerEmail" placeholder="Enter your email address" required>
+		<br/><br/>
+	</fieldset>
+	<fieldset>
+		<legend>Books</legend>
+<!--> datalist asociado al input <-->
+		<datalist list="lstBook" >
+			
+		</datalist>
+		<input list="lstBook" type = "text" name="customerBook">
+		<label for = "customerQuantity">Quantity (Maximun	5)</label>
+		<input type = "text" name="customerQuantity" min="1" max="5">
+	</fieldset>
+	<br/>
+	<button name = "submit">Submit</button>
+
+</body>
+</html>
